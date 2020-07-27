@@ -11,7 +11,7 @@
            remote="github"
            sync-j="4" />
 
-  <project path="build/make" name="mtk-watch/android_build" groups="pdk" >
+  <project path="build/make" name="mtk-watch/android_build_make" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -181,7 +181,7 @@
   <project path="external/google-fruit" name="platform/external/google-fruit" groups="pdk" remote="aosp" />
   <project path="external/google-styleguide" name="platform/external/google-styleguide" groups="pdk" remote="aosp" />
   <project path="external/googletest" name="platform/external/googletest" groups="pdk" remote="aosp" />
-  <project path="external/gptfdisk" name="platform/external/gptfdisk" groups="pdk" />
+  <project path="external/gptfdisk" name="mtk-watch/android_external_gptfdisk" groups="pdk" />
   <project path="external/grpc-grpc" name="platform/external/grpc-grpc" groups="pdk,tradefed" remote="aosp" />
   <project path="external/grpc-grpc-java" name="platform/external/grpc-grpc-java" groups="pdk,tradefed" remote="aosp" />
   <project path="external/guava" name="platform/external/guava" groups="pdk" remote="aosp" />
@@ -561,7 +561,7 @@
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" remote="aosp" />
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" remote="aosp" />
-  <project path="packages/apps/DocumentsUI" name="platform/packages/apps/DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
+  <project path="packages/apps/DocumentsUI" name="mtk-watch/android_packages_apps_DocumentsUI" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/Email" name="mtk-watch/android_packages_apps_Email" groups="pdk-fs" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" groups="pdk-fs" remote="aosp" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" remote="aosp" />

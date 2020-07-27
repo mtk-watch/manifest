@@ -7,7 +7,7 @@
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
            revision="refs/tags/android-10.0.0_r2" />
-  <default revision="refs/heads/t-alps-q0.mp1-V9.107"
+  <default revision="refs/heads/t-alps-q0.mp1-V9.122.1"
            remote="github"
            sync-j="4" />
 

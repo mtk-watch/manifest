@@ -3,6 +3,9 @@
 
   <remote  name="github"
            fetch=".." />
+  <remote  name="gitlab"
+           fetch="https://gitlab.com"
+           revision="refs/heads/t-alps-q0.mp1-V9.122.1" />
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/"
@@ -29,6 +32,7 @@
   <project path="art" name="mtk-watch/android_art" groups="pdk" />
   <project path="bionic" name="mtk-watch/android_bionic" groups="pdk" />
   <project path="bootable/recovery" name="mtk-watch/android_bootable_recovery" groups="pdk" />
+  <project path="ccu_tool" name="mtk-watch/android_ccu_tool" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="dalvik" name="platform/dalvik" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="developers/build" name="platform/developers/build" groups="developers,pdk" remote="aosp" />
@@ -81,6 +85,8 @@
   <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" groups="device,hikey,pdk" clone-depth="1" remote="aosp" />
   <project path="device/linaro/poplar" name="device/linaro/poplar" groups="device,poplar,pdk" remote="aosp" />
   <project path="device/linaro/poplar-kernel" name="device/linaro/poplar-kernel" groups="device,poplar,pdk" clone-depth="1" remote="aosp" />
+  <project path="device/mediatek" name="mtk-watch/android_device_mediatek" groups="device,pdk" />
+  <project path="device/mediateksample" name="mtk-watch/android_device_mediateksample" groups="device,pdk" />
   <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
   <project path="device/ti/beagle_x15" name="device/ti/beagle-x15" groups="device,beagle_x15,pdk" remote="aosp" />
   <project path="device/ti/beagle_x15-kernel" name="device/ti/beagle-x15-kernel" groups="device,beagle_x15,pdk" clone-depth="1" remote="aosp" />
@@ -528,6 +534,11 @@
   <project path="kernel/build" name="kernel/build" remote="aosp" />
   <project path="kernel/configs" name="kernel/configs" groups="vts,pdk" remote="aosp" />
   <project path="kernel/tests" name="kernel/tests" groups="vts,pdk" remote="aosp" />
+  <project path="kernel-3.18" name="mtk-watch/android_kernel-3.18" groups="pdk" />
+  <project path="kernel-4.14" name="mtk-watch/android_kernel-4.14" groups="pdk" />
+  <project path="kernel-4.4" name="mtk-watch/android_kernel-4.4" groups="pdk" />
+  <project path="kernel-4.9" name="mtk-watch/android_kernel-4.9" groups="pdk" />
+  <project path="kernel-4.9-lc" name="mtk-watch/android_kernel-4.9-lc" groups="pdk" />
   <project path="libcore" name="mtk-watch/android_libcore" groups="pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
@@ -768,6 +779,9 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
+  <project path="trusty" name="mtk-watch/android_trusty" groups="pdk" />
+  <project path="vendor/mediatek" name="mtk-watch/android_vendor_mediatek" groups="pdk" remote="gitlab" />
+
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 

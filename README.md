@@ -15,6 +15,6 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 ```bash
 
-$ python vendor/mediatek/proprietary/scripts/releasetools/split_build_helper.py full_k39tv1_64_bsp
+$ python vendor/mediatek/proprietary/scripts/releasetools/split_build_helper.py full_k39tv1_64_bsp-userdebug
 
 ```
